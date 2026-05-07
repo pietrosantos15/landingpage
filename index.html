@@ -1,200 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Atelier</title>
+  <title>The Digital Atelier</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="pagina">
-    <header class="cabecalho">
-      <a class="logo" href="#">Digital Atelier</a>
+  <header class="barra-topo">
+    <button class="botao-menu" aria-label="Open menu">=</button>
+    <a class="marca" href="#">The Digital Atelier</a>
+    <nav>
+      <a href="#collections">Collections</a>
+      <a href="#produtos">New Arrivals</a>
+      <a href="#journal">Journal</a>
+      <a href="#story">Our Story</a>
+    </nav>
+    <div class="icones">
+      <a href="#" aria-label="Bag">bag</a>
+      <a href="#" aria-label="Account">user</a>
+    </div>
+  </header>
 
-      <nav class="menu">
-        <a href="#colecao">Collections</a>
-        <a href="#produtos">Products</a>
-        <a href="#depoimentos">Testimonials</a>
-        <a href="#contato">Contact</a>
-      </nav>
-
-      <div class="icones">
-        <a href="#" aria-label="Favoritos">&#9825;</a>
-        <a href="#" aria-label="Perfil">&#9675;</a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" id="colecao">
-        <div class="texto-hero">
-          <p class="topo-secao">Exclusive collection</p>
-          <h1>Art and design for modern life</h1>
-          <p class="descricao">
-            Discover pieces created to bring together beauty, function and personality in a refined visual style.
-          </p>
-
-          <div class="botoes">
-            <a class="botao botao-roxo" href="#produtos">Explore collection</a>
-            <a class="botao botao-claro" href="#depoimentos">Watch story</a>
-          </div>
-        </div>
-
-        <div class="imagem-hero">
-          <div class="quadro-maior">
-            <div class="detalhe detalhe-um"></div>
-            <div class="detalhe detalhe-dois"></div>
-          </div>
-          <div class="quadro-menor">
-            <div class="vaso"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="secao" id="contato">
-        <div class="titulo-secao">
-          <div>
-            <p class="topo-secao">Our philosophy</p>
-            <h2>The atelier standard</h2>
-          </div>
-          <p class="texto-lado">
-            Three pillars guide every choice: quality, care and strong visual presence.
-          </p>
-        </div>
-
-        <div class="grade-pilares">
-          <article class="card">
-            <span class="icone-card">01</span>
-            <h3>True quality</h3>
-            <p>Each piece goes through a careful selection process to deliver a premium result.</p>
-          </article>
-
-          <article class="card">
-            <span class="icone-card">02</span>
-            <h3>Conscious flow</h3>
-            <p>Beautiful design supported by more responsible choices for today and tomorrow.</p>
-          </article>
-
-          <article class="card">
-            <span class="icone-card">03</span>
-            <h3>Global delivery</h3>
-            <p>An elegant shopping experience from the first click to the moment your order arrives.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="secao" id="produtos">
-        <div class="titulo-secao">
-          <div>
-            <p class="topo-secao">New arrivals</p>
-            <h2>Objects made to stay</h2>
-          </div>
-        </div>
-
-        <div class="grade-produtos">
-          <article class="produto">
-            <div class="foto-produto azul">
-              <span class="etiqueta">New</span>
-            </div>
-            <div class="info-produto">
-              <div>
-                <h3>Indigo Series 01</h3>
-                <p>Watch</p>
-              </div>
-              <strong>$450</strong>
-            </div>
-          </article>
-
-          <article class="produto">
-            <div class="foto-produto escuro"></div>
-            <div class="info-produto">
-              <div>
-                <h3>Mare Vase</h3>
-                <p>Decor</p>
-              </div>
-              <strong>$180</strong>
-            </div>
-          </article>
-
-          <article class="produto">
-            <div class="foto-produto claro"></div>
-            <div class="info-produto">
-              <div>
-                <h3>Chrono Silver</h3>
-                <p>Accessory</p>
-              </div>
-              <strong>$620</strong>
-            </div>
-          </article>
-
-          <article class="produto">
-            <div class="foto-produto preto"></div>
-            <div class="info-produto">
-              <div>
-                <h3>Sonic Bloom</h3>
-                <p>Audio</p>
-              </div>
-              <strong>$340</strong>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="depoimentos" id="depoimentos">
-        <div class="titulo-secao titulo-escuro">
-          <h2>Words about the atelier</h2>
-        </div>
-
-        <div class="grade-depoimentos">
-          <article class="card-depoimento">
-            <span class="aspas">"</span>
-            <p>
-              The attention given to every detail makes the brand feel rare. Everything communicates design and intention.
-            </p>
-            <strong>Elena Vance</strong>
-            <span>Creative director</span>
-          </article>
-
-          <article class="card-depoimento">
-            <span class="aspas">"</span>
-            <p>
-              It is rare to find pieces that balance sustainability and visual sophistication so well.
-            </p>
-            <strong>Julian Thorne</strong>
-            <span>Principal architect</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="newsletter">
-        <p class="topo-secao roxo">Exclusive</p>
-        <h2>Join the inner circle</h2>
-        <p class="descricao-newsletter">
-          Get early access to launches, special content and updates from the collection.
+  <main>
+    <section class="principal" id="collections">
+      <div class="texto-principal">
+        <p class="selo">New Collection 2024</p>
+        <h1>Curated Artistry for the <span>Modern Life.</span></h1>
+        <p>
+          Discover a symphony of design and utility. Every piece in our
+          collection is an intentional statement for the discerning aesthete.
         </p>
-
-        <form class="formulario">
-          <input type="email" placeholder="Enter your email">
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class="rodape">
-      <div>
-        <a class="logo" href="#">Digital Atelier</a>
-        <p>&copy; 2026 Digital Atelier. Made for those who value curation.</p>
+        <div class="acoes">
+          <a class="botao primario" href="#produtos">Explore Collection</a>
+          <a class="botao secundario" href="#journal">Watch Film</a>
+        </div>
       </div>
 
-      <nav class="menu-rodape">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Shipping</a>
-        <a href="#">Instagram</a>
-      </nav>
-    </footer>
-  </div>
+      <div class="arte-principal">
+        <img class="sala" src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1100&q=80" alt="Modern interior">
+        <img class="vaso" src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Decorative ceramic vase">
+        <blockquote>
+          <strong>"Simply the finest curation I've ever encountered."</strong>
+          <span>Architectural Daily</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="padrao" id="story">
+      <div class="cabecalho-secao">
+        <div>
+          <p class="rotulo">The Philosophy</p>
+          <h2>The Atelier Standard</h2>
+        </div>
+        <p>Defined by three pillars of uncompromising excellence in digital and physical craft.</p>
+      </div>
+
+      <div class="grade-recursos">
+        <article>
+          <span>01</span>
+          <h3>Artisan Verified</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum deleniti expedita dolorum itaque voluptas iure rem fugiat dolor odit numquam amet magnam totam, inventore aspernatur. Quam asperiores eius quasi!</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Sustainable Flow</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum deleniti expedita dolorum itaque voluptas iure rem fugiat dolor odit numquam amet magnam totam, inventore aspernatur. Quam asperiores eius quasi!</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Global Priority</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum deleniti expedita dolorum itaque voluptas iure rem fugiat dolor odit numquam amet magnam totam, inventore aspernatur. Quam asperiores eius quasi!</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="produtos" id="produtos">
+      <div class="cabecalho-produtos">
+        <div>
+          <h2>Featured Drops</h2>
+          <p>Limited quantities available.</p>
+        </div>
+        <a href="#">View All Collections -></a>
+      </div>
+
+      <div class="grade-produtos">
+        <article>
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=500&q=80" alt="Indigo suit">
+          <small>Limited Edition</small>
+          <h3>The Indigo Series 01</h3>
+          <strong>$450</strong>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=500&q=80" alt="Ceramic vessel">
+          <small>Handcrafted</small>
+          <h3>Tidal Ceramic Vessel</h3>
+          <strong>$190</strong>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Silver watch">
+          <small>Gallery Piece</small>
+          <h3>Atelier Chrono Silver</h3>
+          <strong>$620</strong>
+        </article>
+        <article>
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Blue headphones">
+          <small>Tech Essential</small>
+          <h3>Sonic Bloom Headphones</h3>
+          <strong>$340</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="depoimentos" id="journal">
+      <h2>Words from the Atelier</h2>
+      <div class="grade-depoimentos">
+        <article>
+          <span class="estrelas">*****</span>
+          <p>"The attention to detail in every piece I've ordered is staggering. It feels less like shopping and more like curated discovery."</p>
+          <div class="pessoa">
+            <span></span>
+            <strong>Elena Vance <small>Interior Designer</small></strong>
+          </div>
+        </article>
+        <article>
+          <span class="estrelas">*****</span>
+          <p>"The Digital Atelier has redefined my aesthetic. Their sustainability mission makes every purchase feel responsible and rewarding."</p>
+          <div class="pessoa">
+            <span></span>
+            <strong>Julian Thorne <small>Architect</small></strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="boletim">
+      <h2>Join the Inner Circle</h2>
+      <p>Receive early access to limited drops, artist interviews, and private gallery showings directly in your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <small>Respecting privacy. Curated content only.</small>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h3>The Digital Atelier</h3>
+      <p>Elevating the everyday through curated artistry and sustainable craftsmanship since 2024.</p>
+      <div class="sociais">o o</div>
+    </div>
+    <nav>
+      <a href="#">Collection</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Bestsellers</a>
+      <a href="#">Art Prints</a>
+      <a href="#">Company</a>
+      <a href="#">About</a>
+      <a href="#">Sustainability</a>
+      <a href="#">Journal</a>
+      <a href="#">Legal</a>
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+      <a href="#">Terms</a>
+    </nav>
+    <a class="atalho" href="#produtos">Quick Shop Collections</a>
+  </footer>
 </body>
 </html>
+
