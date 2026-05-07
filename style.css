@@ -76,6 +76,12 @@ main {
   gap: 18px;
   color: var(--purple);
 }
+.icones img,
+.botao-menu img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
 .principal {
   display: grid;
   grid-template-columns: 0.75fr 1fr;
@@ -182,6 +188,11 @@ blockquote {
   font-size: 11px;
   font-weight: 800;
 }
+.grade-recursos span img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
 .grade-recursos article:nth-child(2) span {
   background: #ffeaf5;
   color: var(--pink);
@@ -264,11 +275,11 @@ blockquote {
   gap: 12px;
   font-size: 12px;
 }
-.pessoa span {
+.pessoa img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #f0d48d, #1d2b2f);
+  object-fit: cover;
 }
 .pessoa small {
   display: block;
@@ -356,6 +367,7 @@ footer nav {
     background: transparent;
     color: var(--purple);
     font-weight: 800;
+    padding: 0;
   }
   .marca {
     margin: 0 auto 0 0;
@@ -488,6 +500,10 @@ footer nav {
     height: 26px;
     margin-bottom: 16px;
     font-size: 8px;
+  }
+  .grade-recursos span img {
+    width: 13px;
+    height: 13px;
   }
   .grade-recursos h3,
   .grade-produtos h3 {
